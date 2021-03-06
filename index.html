@@ -139,7 +139,7 @@
     <div class="block-1__slid swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide header__slide">
-                <img loading="lazy" class="bg_slider-1" src="img/index/slider_1.png" alt="slider_1"/>
+                <img class="bg_slider-1" src="img/index/slider_1.png" alt="slider_1"/>
                 <div class="block-1__slid_main">
                     <div class="block-1__slid_text">
                         Проектирование и производство катеров и яхт в России
@@ -539,7 +539,7 @@
             <div class="block-4__opinions">
                 <div class="block-4__opinions_item">
                     <div class="block-4__opinions_video">
-                        <iframe width="1643" height="650" src="https://www.youtube.com/embed/TCtgK_UVvpw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div data-id="VIDEO_ID-1" class="youtube-player youtube-player-1"></div>
                     </div>
                     <div class="block-4__opinions_info">
                         <div class="block-4__opinions_title">
@@ -577,7 +577,7 @@
                 </div>
                 <div class="block-4__opinions_item">
                     <div class="block-4__opinions_video">
-                        <iframe width="1643" height="650" src="https://www.youtube.com/embed/cMWB4shlq7A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div data-id="VIDEO_ID-2" class="youtube-player youtube-player-2"></div>
                     </div>
                     <div class="block-4__opinions_info">
                         <div class="block-4__opinions_title">
@@ -615,7 +615,7 @@
                 </div>
                 <div class="block-4__opinions_item">
                     <div class="block-4__opinions_video">
-                        <iframe width="1643" height="650" src="https://www.youtube.com/embed/72pAqMFuuxw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div data-id="VIDEO_ID-3" class="youtube-player youtube-player-3"></div>
                     </div>
                     <div class="block-4__opinions_info">
                         <div class="block-4__opinions_title">
@@ -1030,9 +1030,97 @@
         </div>
     </div>
 </div>
-
+<script>
+    document.addEventListener("DOMContentLoaded",
+    function() {
+        var div, n,
+     v = document.getElementsByClassName("youtube-player-1");
+        for (n = 0; n < v.length; n++) {
+     div = document.createElement("div");
+     div.setAttribute("data-id", v[n].dataset.id);
+     div.classList.add('data-id');
+     div.innerHTML = labnolThumb(v[n].dataset.id);
+     div.onclick = labnolIframe1;
+     v[n].appendChild(div);
+        }
+    });
+    
+    function labnolThumb(id) {
+    var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
+        play = '<div class="play"></div>';
+    return thumb.replace("ID", id) + play;
+    }
+    
+    function labnolIframe1() {
+    var iframe = document.createElement("iframe");
+    const embed = "https://www.youtube.com/embed/WBne1JaH0nI?autoplay=1";
+    iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("allowfullscreen", "1");
+    this.parentNode.replaceChild(iframe, this);
+    } 
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded",
+    function() {
+        var div, n,
+     v = document.getElementsByClassName("youtube-player-2");
+        for (n = 0; n < v.length; n++) {
+     div = document.createElement("div");
+     div.setAttribute("data-id", v[n].dataset.id);
+     div.classList.add('data-id');
+     div.innerHTML = labnolThumb(v[n].dataset.id);
+     div.onclick = labnolIframe2;
+     v[n].appendChild(div);
+        }
+    });
+    
+    function labnolThumb(id) {
+    var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
+        play = '<div class="play"></div>';
+    return thumb.replace("ID", id) + play;
+    }
+    
+    function labnolIframe2() {
+    var iframe = document.createElement("iframe");
+    const embed = "https://www.youtube.com/embed/cMWB4shlq7A?autoplay=1";
+    iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("allowfullscreen", "1");
+    this.parentNode.replaceChild(iframe, this);
+    } 
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded",
+    function() {
+        var div, n,
+     v = document.getElementsByClassName("youtube-player-3");
+        for (n = 0; n < v.length; n++) {
+     div = document.createElement("div");
+     div.setAttribute("data-id", v[n].dataset.id);
+     div.classList.add('data-id');
+     div.innerHTML = labnolThumb(v[n].dataset.id);
+     div.onclick = labnolIframe3;
+     v[n].appendChild(div);
+        }
+    });
+    
+    function labnolThumb(id) {
+    var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
+        play = '<div class="play"></div>';
+    return thumb.replace("ID", id) + play;
+    }
+    
+    function labnolIframe3() {
+    var iframe = document.createElement("iframe");
+    const embed = "https://www.youtube.com/embed/72pAqMFuuxw?autoplay=1";
+    iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("allowfullscreen", "1");
+    this.parentNode.replaceChild(iframe, this);
+    } 
+</script>
 <script src="js/swiper_slider.js"></script>
 <script src="js/script.js"></script>
-
 </body>
 </html>
