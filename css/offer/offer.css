@@ -1505,6 +1505,54 @@ html {
   .offer__main
   .block-4__opinions
   .block-4__opinions_item
+  .block-4__opinions_video
+  .youtube-player {
+  display: block;
+  width: 100%;
+  height: 200px;
+}
+.offer
+  .offer__container.container
+  .offer__main
+  .block-4__opinions
+  .block-4__opinions_item
+  .block-4__opinions_video
+  .youtube-player
+  .data-id {
+  display: block;
+  width: 100%;
+  height: 200px;
+}
+.offer
+  .offer__container.container
+  .offer__main
+  .block-4__opinions
+  .block-4__opinions_item
+  .block-4__opinions_video
+  .youtube-player
+  .data-id
+  img {
+  display: block;
+  width: 100%;
+  height: 200px;
+}
+.offer
+  .offer__container.container
+  .offer__main
+  .block-4__opinions
+  .block-4__opinions_item
+  .block-4__opinions_video
+  .youtube-player
+  iframe {
+  display: block;
+  width: 100%;
+  height: 200px;
+}
+.offer
+  .offer__container.container
+  .offer__main
+  .block-4__opinions
+  .block-4__opinions_item
   .block-4__opinions_info {
   color: #ffffff;
   background: #373736;
