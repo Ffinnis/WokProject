@@ -907,7 +907,7 @@
 </div>
 <div class="block-8">
     <div class="block-8__container container">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae7066f6c4ad8d5cb4c60b48562ef1529a7ed8007fb6caa94d378da0d9474b5f9&amp;source=constructor" width="889" height="430" frameborder="0"></iframe>
+        <div class="block_8__map" data-id="MAP_ID"></div>
         <div class="block-8__main">
             <div class="block-8__left-block">
                 <div class="block-8__row1">«Центральный офис продаж»</div>
@@ -1118,6 +1118,36 @@
     iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
     iframe.setAttribute("frameborder", "0");
     iframe.setAttribute("allowfullscreen", "1");
+    this.parentNode.replaceChild(iframe, this);
+    } 
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded",
+    function() {
+        var div, n,
+     v = document.getElementsByClassName("block_8__map");
+        for (n = 0; n < v.length; n++) {
+     div = document.createElement("div");
+     div.setAttribute("data-id", v[n].dataset.id);
+     div.classList.add('data-map');
+     div.innerHTML = labnolThumb(v[n].dataset.id);
+     div.onclick = labnolIframe4;
+     v[n].appendChild(div);
+        }
+    });
+    
+    function labnolThumb(id) {
+    var thumb = '<img src="img/index/map.png">',
+        play = '<div class="play"></div>';
+    return thumb.replace("ID", id) + play;
+    }
+    
+    function labnolIframe4() {
+    var iframe = document.createElement("iframe");
+    const embed = "https://yandex.ru/map-widget/v1/?um=constructor%3Ae7066f6c4ad8d5cb4c60b48562ef1529a7ed8007fb6caa94d378da0d9474b5f9&amp;source=constructor";
+    iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("height", "430");
     this.parentNode.replaceChild(iframe, this);
     } 
 </script>
