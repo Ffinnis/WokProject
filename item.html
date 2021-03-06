@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SLIDER</title>
+    <meta name="author" content="Aleksander Salnikov">
+    <meta name="robots" content="none">
+    <meta name="google" content="notranslate">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/swiper_slideer.css">
+    <link rel="stylesheet" href="css/item/item.css">
+</head>
+<body>
+
+<div class="popup">
+    <div class="popup__main">
+        <div class="popup__main_close">
+            <img src="./img/images/popup_close.svg" alt="popup_close">
+        </div>
+        <div class="popup__main_title">
+            у вас есть вопросы?
+        </div>
+        <div class="popup__main_text">
+            Оставьте телефон и наши специалисты свяжутся с вами в ближайшее время.
+        </div>
+        <div class="popup__main__form">
+            <label for="name">
+                <input id="name" type="text" placeholder="Ваше имя">
+            </label>
+            <label for="phone">
+                <input id="phone" type="tel" placeholder="Номер телефона">
+            </label>
+        </div>
+        <div class="popup__main_conf">
+            Отправляя свои данные я соглашаюсь с <a href="conf.html"> политикой конфиденциальности </a> сайта и даю свое согласие на обработку персональных даных
+        </div>
+        <button class="popup__main_btn">
+            Отправить
+        </button>
+    </div>
+</div>
+<div class="zoom">
+    <div class="zoom__main">
+        <div class="zoom__main_close">
+            <img src="./img/images/popup_close.svg" alt="zoom_close">
+        </div>
+        <div class="zoom__img">
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="container header__container">
+        <a href="index.html" class="header__logo">
+            <img src="img/images/logo.png" alt="logo"/>
+        </a>
+        <div class="header__main">
+            <div class="header__back-phone popup_open">
+                <img src="./img/images/btn_phone.svg" alt="btn_phone">
+                ЗАКАЗАТЬ ЗВОНОК
+            </div>
+            <div class="header__links">
+                <a href="caters.html" class="header__link">Катера</a>
+                <a href="compare.html" class="header__link compare_header">Сравнить <span>0</span></a>
+                <a href="dillers.html" class="header__link">Дилеры</a>
+                <a href="contacts.html" class="header__link">Контакты</a>
+            </div>
+        </div>
+        <div class="header__btn-menu">
+            <img src="img/images/menu.png" alt="menu"/>
+            <span>Меню</span>
+        </div>
+    </div>
+</div>
+<div class="menu">
+    <div class="menu__container container">
+        <div class="menu__row-1">
+            <div class="menu__row-1_item">
+                <a href="caters.html">Катера</a>
+            </div>
+            <a href="item.html" class="menu__row-1_item">
+                <span>Slider 175</span>
+                <img src="./img/index/sliders/slider_175.png" alt="menu_item">
+            </a>
+            <a href="item.html" class="menu__row-1_item">
+                <span>Slider 180</span>
+                <img src="./img/index/sliders/slider_180.png" alt="menu_item">
+            </a>
+            <a href="item.html" class="menu__row-1_item">
+                <span>Slider 210</span>
+                <img src="./img/index/sliders/slider_210.png" alt="menu_item">
+            </a>
+            <a href="item.html" class="menu__row-1_item">
+                <span>Slider 210 BR</span>
+                <img src="./img/index/sliders/slider_210BR.png" alt="menu_item">
+            </a>
+            <a href="item.html" class="menu__row-1_item">
+                <span>Slider 230</span>
+                <img src="./img/index/sliders/slider_230.png" alt="menu_item">
+            </a>
+            <a href="item.html" class="menu__row-1_item">
+                <span>Slider 42</span>
+                <img src="./img/index/sliders/slider_42.png" alt="menu_item">
+            </a>
+            <a href="compare.html" class="menu__row-1_item">
+                <span>Сравнить </span>
+            </a>
+        </div>
+        <div class="menu__row-2">
+            <a href="promotions.html" class="menu__row-2__link">Акции</a>
+            <a href="production.html" class="menu__row-2__link">Продукция</a>
+            <a href="tests.html" class="menu__row-2__link">Тесты</a>
+            <a href="configuration.html" class="menu__row-2__link">Конфигуратор</a>
+            <a href="ask.html" class="menu__row-2__link">Вопросы и ответы</a>
+            <a href="offer.html" class="menu__row-2__link">Отзывы</a>
+        </div>
+        <div class="menu__row-3">
+            <div class="menu__row-3_links">
+                <a href="info.html" class="menu__row-3__link">О компании</a>
+                <a href="blog.html" class="menu__row-3__link">Блог</a>
+                <a href="dillers.html" class="menu__row-3__link">Дилеры</a>
+                <a href="contacts.html" class="menu__row-3__link">Контакты</a>
+            </div>
+            <div class="menu__row-3_social">
+                <a href="https://www.instagram.com/?hl=ru" target="_blank">
+                    <img src="./img/images/block-10_inst.svg" alt="inst">
+                </a>
+                <a href="https://www.youtube.com/watch?v=lz0upUv-WIQ&t=3s" target="_blank">
+                    <img src="./img/images/block-10_yout.svg" alt="yout">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="item">
+    <div class="item__container container">
+        <div class="blocks__title item__title">
+            <img src="./img/images/logo_line.svg" alt="logo_line">
+            <a href="caters.html"> катера / </a> <span> Slider 180 </span>
+            <img src="./img/images/logo_line.svg" alt="logo_line">
+        </div>
+    </div>
+    <div class="item__slider">
+        <div class="block-1__slid swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide_item">
+                    <img class="bg_slider-4" src="img/item/slid.png" alt="slider_1"/>
+                </div>
+                <div class="swiper-slide slide_item">
+                    <img class="bg_slider-4" src="img/item/slid.png" alt="slider_1"/>
+                </div>
+                <div class="swiper-slide slide_item">
+                    <img class="bg_slider-4" src="img/item/slid.png" alt="slider_1"/>
+                </div>
+            </div>
+        </div>
+        <div class="container item__slider__container">
+            <div class="item__slider__main">
+                <div class="item__slider__nav-slide">
+                    <div class="block-1__arrow-left "></div>
+                    <div class=" swiper-pagination item__slider__arrow-dots">
+                        <span class="active"></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="block-1__arrow-right"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="item-block-1">
+    <div class="item-block-1__container container">
+        <div class="item-block-1__price">
+            от 749 000 руб.
+        </div>
+        <div class="item-block-1__btns">
+            <a href="configuration.html" class="item-block-1_btn">
+                <img src="./img/item/Vector.svg" alt="Vector">
+                Рассчитать стоимость
+            </a>
+            <a  href="#" class="item-block-1_btn popup_open">
+                <img src="./img/item/Vector2.svg" alt="Vector">
+                Оставить заявку
+            </a>
+            <a model="180" href="compare.html" class="item-slider__header_btn-comparison item-block-1_btn" onclick='event.preventDefault()'>
+                <img src="./img/item/ui.svg" alt="Vector">
+                К сравнению
+            </a>
+        </div>
+    </div>
+</div>
+<div class="item-block-2">
+    <div class="item-block-2__container container">
+        <div class="item-block-2__text">
+            Яркий каютный катер классической компоновки. Просторная планировка, большая каюта,
+            динамичный дизайн и ходовые достоинства делают модель настоящим бестселлером.
+        </div>
+        <div class="item-block-2__title">
+            <span>Характеристики Slider 180</span>
+        </div>
+        <div class="item-block-2__main">
+            <div class="item-block-2__main_left">
+                <div class="item-block-2__main_left-row">
+                    <span>Длина наибольшая</span>
+                    <span>5000 мм</span>
+                </div>
+                <div class="item-block-2__main_left-row">
+                    <span>Ширина наибольшая</span>
+                    <span>2100	мм</span>
+                </div>
+                <div class="item-block-2__main_left-row">
+                    <span>Высота борта на миделе</span>
+                    <span>870	мм</span>
+                </div>
+                <div class="item-block-2__main_left-row">
+                    <span>Высота транца</span>
+                    <span>510	мм</span>
+                </div>
+                <div class="item-block-2__main_left-row">
+                    <span>Масса оборудованного корпуса</span>
+                    <span>540	кг</span>
+                </div>
+                <div class="item-block-2__main_left-row">
+                    <span>Грузоподъемность</span>
+                    <span>480	кг</span>
+                </div>
+                <div class="item-block-2__main_left-row">
+                    <span>Запас топлива</span>
+                    <span>100	л</span>
+                </div>
+                <div class="item-block-2__main_left-row">
+                    <span>Пассажировместимость</span>
+                    <span>5	чел</span>
+                </div>
+                <div class="item-block-2__main_left-row">
+                    <span>Водоизмещение полное</span>
+                    <span>1210	кг</span>
+                </div>
+                <div class="item-block-2__main_left-row">
+                    <span>Максимально допустимая высота волны</span>
+                    <span>0,6	м</span>
+                </div>
+                <div class="item-block-2__main_left-row">
+                    <span>Максимальная мощность двигателя</span>
+                    <span>100	л.с</span>
+                </div>
+                <div class="item-block-2__main_left-row">
+                    <span>Рекомендованная мощность двигателя</span>
+                    <span>70	л.с</span>
+                </div>
+            </div>
+            <div class="item-block-2__main_right">
+                <div class="item-block-2__main_right-title">
+                    Размер каюты
+                </div>
+                <div class="item-block-2__main_right-row">
+                    <span>Длина</span>
+                    <span>1960	мм</span>
+                </div>
+                <div class="item-block-2__main_right-row">
+                    <span>Ширина</span>
+                    <span>1850	мм</span>
+                </div>
+                <div class="item-block-2__main_right-row">
+                    <span>Высота</span>
+                    <span>880	мм</span>
+                </div>
+                <div class="item-block-2__main_right-row">
+                    <span>Глубина рундука</span>
+                    <span>300	мм</span>
+                </div>
+                <div class="item-block-2__main_right-text">
+                    Катера Slider предназначены для прогулок, активного отдыха, рыбной ловли и  охоты в акваториях рек, озер, водохранилищ и морей. Соблюдение соответствующих мер безопасности и  инструкции по эксплуатации сделает Ваш отдых максимально приятным, а владение катером Slider настолько долгим, насколько Вы этого хотите.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="block-5">
+    <div class="block-5_wrap">
+        <!--    <div class="container block-5__container">-->
+        <div class="blocks__title block-5__title">
+            <img src="./img/images/logo_line.svg" alt="logo_line">
+            <span>Фотогалерея</span>
+            <img src="./img/images/logo_line.svg" alt="logo_line">
+        </div>
+        <div class="block-5__main">
+            <div class="container block-5__container ">
+                <div class="block-5__bar">
+                    <div class="block-5__bar_item active">slider 175</div>
+                    <div class="block-5__bar_item">slider 180</div>
+                    <div class="block-5__bar_item">slider 210</div>
+                    <div class="block-5__bar_item">slider 210BR</div>
+                    <div class="block-5__bar_item">slider 230</div>
+                    <div class="block-5__bar_item">slider 42</div>
+                </div>
+            </div>
+            <div class="swiper-container2 block-5__slider_container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide block-5__slider">
+                        <div class="swiper-container3">
+                            <div class="swiper-wrapper grid__slider3">
+                                <div class="swiper-slide slide-img">
+                                    <img src="img/index/slider-175/galery_175-1.png" alt="slider-175"/>
+                                </div>
+                                <div class="swiper-slide slide-img">
+                                    <img src="img/index/slider-175/galery_175-2.png" alt="slider-175"/>
+                                </div>
+                                <div class="swiper-slide slide-img">
+                                    <img src="img/index/slider-175/galery_175-3.png" alt="slider-175"/>
+                                </div>
+                                <div class="swiper-slide slide-img">
+                                    <img src="img/index/slider-175/galery_175-1.png" alt="slider-175"/>
+                                </div>
+                                <div class="swiper-slide slide-img">
+                                    <img src="img/index/slider-175/galery_175-2.png" alt="slider-175"/>
+                                </div>
+                                <div class="swiper-slide slide-img">
+                                    <img src="img/index/slider-175/galery_175-3.png" alt="slider-175"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide block-5__slider ">
+                        <div class="swiper-container3">
+                            <div class="swiper-wrapper grid__slider3">
+                                <div class="swiper-slide  slide-img">
+                                    <img src="img/index/slider-180/galery_180-1.png"  alt="slider-180"/>
+                                </div>
+                                <div class="swiper-slide  slide-img">
+                                    <img src="img/index/slider-180/galery_180-2.png" alt="slider-180"/>
+                                </div>
+                                <div class="swiper-slide  slide-img">
+                                    <img src="img/index/slider-180/galery_180-3.png" alt="slider-180"/>
+                                </div>
+                                <div class="swiper-slide  slide-img">
+                                    <img src="img/index/slider-180/galery_180-1.png" alt="slider-180"/>
+                                </div>
+                                <div class="swiper-slide  slide-img">
+                                    <img src="img/index/slider-180/galery_180-2.png" alt="slider-180"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide block-5__slider">
+                        <div class="swiper-container3">
+                            <div class="swiper-wrapper grid__slider3">
+                                <div class="swiper-slide slide-img">
+                                    <img src="img/index/slider-210/galery_210-1.png" alt="slider-180"/>
+                                </div>
+                                <div class="swiper-slide slide-img">
+                                    <img src="img/index/slider-210/galery_210-2.png" alt="slider-180"/>
+                                </div>
+                                <div class="swiper-slide slide-img">
+                                    <img src="img/index/slider-210/galery_210-3.png" alt="slider-180"/>
+                                </div>
+                                <div class="swiper-slide slide-img">
+                                    <img src="img/index/slider-210/galery_210-1.png" alt="slider-180"/>
+                                </div>
+                                <div class="swiper-slide slide-img">
+                                    <img src="img/index/slider-210/galery_210-2.png" alt="slider-180"/>
+                                </div>
+                                <div class="swiper-slide slide-img">
+                                    <img src="img/index/slider-210/galery_210-3.png" alt="slider-180"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide block-5__slider">
+                        <div class="swiper-container3">
+                            <div class="swiper-wrapper grid__slider3">
+                                <div class="swiper-slide  slide-img">
+                                    <img src="img/index/slider-180/galery_180-1.png" alt="slider-180"/>
+                                </div>
+                                <div class="swiper-slide  slide-img">
+                                    <img src="img/index/slider-180/galery_180-2.png" alt="slider-180"/>
+                                </div>
+                                <div class="swiper-slide  slide-img">
+                                    <img src="img/index/slider-180/galery_180-3.png" alt="slider-180"/>
+                                </div>
+                                <div class="swiper-slide  slide-img">
+                                    <img src="img/index/slider-180/galery_180-1.png" alt="slider-180"/>
+                                </div>
+                                <div class="swiper-slide  slide-img">
+                                    <img src="img/index/slider-180/galery_180-2.png" alt="slider-180"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide block-5__slider">
+                        <div class="swiper-container3">
+                            <div class="swiper-wrapper grid__slider3">
+                                <div class="swiper-slide slide-img">
+                                    <img src="img/index/slider-175/galery_175-1.png" alt="slider-180"/>
+                                </div>
+                                <div class="swiper-slide slide-img">
+                                    <img src="img/index/slider-175/galery_175-2.png" alt="slider-180"/>
+                                </div>
+                                <div class="swiper-slide slide-img">
+                                    <img src="img/index/slider-175/galery_175-3.png" alt="slider-180"/>
+                                </div>
+                                <div class="swiper-slide slide-img">
+                                    <img src="img/index/slider-175/galery_175-1.png" alt="slider-180"/>
+                                </div>
+                                <div class="swiper-slide slide-img">
+                                    <img src="img/index/slider-175/galery_175-2.png" alt="slider-180"/>
+                                </div>
+                                <div class="swiper-slide slide-img">
+                                    <img src="img/index/slider-175/galery_175-3.png" alt="slider-180"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide block-5__slider">
+                        <div class="swiper-container3">
+                            <div class="swiper-wrapper grid__slider3">
+                                <div class="swiper-slide  slide-img">
+                                    <img src="img/index/slider-180/galery_180-1.png" alt="slider-180"/>
+                                </div>
+                                <div class="swiper-slide  slide-img">
+                                    <img src="img/index/slider-180/galery_180-2.png" alt="slider-180"/>
+                                </div>
+                                <div class="swiper-slide  slide-img">
+                                    <img src="img/index/slider-180/galery_180-3.png" alt="slider-180"/>
+                                </div>
+                                <div class="swiper-slide  slide-img">
+                                    <img src="img/index/slider-180/galery_180-1.png" alt="slider-180"/>
+                                </div>
+                                <div class="swiper-slide  slide-img">
+                                    <img src="img/index/slider-180/galery_180-2.png" alt="slider-180"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block-5__navigation">
+                <div class="block-5__arrow-left"></div>
+                <div class="block-5__nav_name">
+                    <div class="nav_name active">slider 175</div>
+                    <div class="nav_name">slider 180</div>
+                    <div class="nav_name">slider 210</div>
+                    <div class="nav_name">slider 210BR</div>
+                    <div class="nav_name">slider 230</div>
+                    <div class="nav_name">slider 42</div>
+                </div>
+                <div class="block-5__arrow-dots">
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="block-5__arrow-right"></div>
+            </div>
+        </div>
+        <!--    </div>-->
+    </div>
+</div>
+
+<div class="item-block-3">
+    <div class="item-block-3__container container">
+        <div class="item-block-3__title">
+            <span>Видео </span>
+        </div>
+        <div class="item-block-3__main">
+            <div class="item-block-3__main_big-video">
+                <iframe src="https://www.youtube.com/embed/lz0upUv-WIQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="item-block-3__main_small-video">
+                <iframe  src="https://www.youtube.com/embed/lz0upUv-WIQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe  src="https://www.youtube.com/embed/lz0upUv-WIQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="item-block-5">
+    <div class="item-block-4__container container">
+        <div class="item-block-4__title">
+            <span>Комплектация Slider 180 </span>
+        </div>
+        <div class="item-block-4__main">
+            <div class="item-block-4__main_btns">
+                <div class="item-block-5__main_btn active">
+                    <span>Корпус</span>
+                </div>
+                <div class="item-block-5__main_btn">
+                    <span>Каюта</span>
+                </div>
+                <div class="item-block-5__main_btn">
+                    <span>Кокпит</span>
+                </div>
+            </div>
+
+            <div class="item-block-5__main_table active  item-block-5__table-1">
+
+                <div class="item-block-4__table-1_row">
+                    <span>Корпус из стеклопластика 7-8 мм. На днище между нижними реданами 10–13 мм. Килевая часть 16 мм</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Лобовое стекло в алюминиевой раме с центральной открывающейся секцией</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Помпа откачки подсланевых вод</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Навигационные огни</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Якорный отсек в носовой части катера с лючком и замком</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Привальный брус из алюминия, со вставкой из квартопрена</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Носовые релинги</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Нескользящее покрытие ступеней и палуб</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Швартовые утки из нержавеющей стали</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Зацепные устройства для кранцев</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Прицепное устройство для прицепа в носовой части</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Телескопический трап для купания</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Кольцо для буксировки воднолыжника</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Держатели спиннинга 2шт</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Бортовая надпись Slider 180 2шт.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Электропроводка проложенная в гофротрубе</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Защита приборов выполнена посредством распределительного блока с предохранителями</span>
+                </div>
+            </div>
+            <div class="item-block-5__main_table  item-block-5__table-1">
+
+                <div class="item-block-4__table-1_row">
+                    <span>Каюта</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Лобовое стекло в алюминиевой раме с центральной открывающейся секцией</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Помпа откачки подсланевых вод</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Навигационные огни</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Якорный отсек в носовой части катера с лючком и замком</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Привальный брус из алюминия, со вставкой из квартопрена</span>
+                </div>
+            </div>
+            <div class="item-block-5__main_table  item-block-5__table-1">
+
+                <div class="item-block-4__table-1_row">
+                    <span>Кокпит</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Лобовое стекло в алюминиевой раме с центральной открывающейся секцией</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Помпа откачки подсланевых вод</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Навигационные огни</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Якорный отсек в носовой части катера с лючком и замком</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Привальный брус из алюминия, со вставкой из квартопрена</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Носовые релинги</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Нескользящее покрытие ступеней и палуб</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Швартовые утки из нержавеющей стали</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Зацепные устройства для кранцев</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="item-block-4">
+    <div class="item-block-4__container container">
+        <div class="item-block-4__title">
+            <span>Дополнительные опции Slider 180 </span>
+        </div>
+        <div class="item-block-4__main">
+            <div class="item-block-4__main_btns">
+                <div class="item-block-4__main_btn active">
+                    <span>Экстерьер</span>
+                </div>
+                <div class="item-block-4__main_btn">
+                    <span>Электрооборудование</span>
+                </div>
+                <div class="item-block-4__main_btn">
+                    <span>Интерьер</span>
+                </div>
+                <div class="item-block-4__main_btn">
+                    <span>Комфорт и безопасность</span>
+                </div>
+                <div class="item-block-4__main_btn">
+                    <span>Прочее</span>
+                </div>
+            </div>
+
+            <div class="item-block-4__main_table active  item-block-4__table-1">
+
+                <div class="item-block-4__table-1_row">
+                    <span>Цветная полоса по борту узкая</span>
+                    <span>от 14 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Цветная полоса по борту широкая</span>
+                    <span>от 21 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Окраска корпуса ниже привального бруса</span>
+                    <span>от 29 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Окраска корпуса выше привального бруса</span>
+                    <span>от 29 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Полная окраска корпуса</span>
+                    <span>от 52 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Необрастающее покрытие днища</span>
+                    <span>41 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Защита киля</span>
+                    <span>22 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Тарга для буксировки водного лыжника</span>
+                    <span>35 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Тауэр для буксировки вэйкборда</span>
+                    <span>от 100 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Высокий носовой релинг</span>
+                    <span>35 000 руб.</span>
+                </div>
+            </div>
+            <div class="item-block-4__main_table item-block-4__table-1">
+
+                <div class="item-block-4__table-1_row">
+                    <span>Горн электрический</span>
+                    <span>от 00 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Светодиодная подсветка кокпита</span>
+                    <span>от 00 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Светодиодная подсветка кормовых потопчин</span>
+                    <span>от 00 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Подводная подсветка транца</span>
+                    <span>от 00 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Розетка 12В в консоли пассажира</span>
+                    <span>от 00 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Розетка 12В в каюте</span>
+                    <span>от 00 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span> Магнитола</span>
+                    <span>от 00 000 руб.</span>
+                </div>
+            </div>
+            <div class="item-block-4__main_table item-block-4__table-1">
+
+                <div class="item-block-4__table-1_row">
+                    <span>Интерьер</span>
+                    <span>от 14 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Цветная полоса по борту широкая</span>
+                    <span>от 21 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Окраска корпуса ниже привального бруса</span>
+                    <span>от 29 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Окраска корпуса выше привального бруса</span>
+                    <span>от 29 000 руб.</span>
+                </div>
+
+            </div>
+            <div class="item-block-4__main_table item-block-4__table-1">
+
+                <div class="item-block-4__table-1_row">
+                    <span>Безопасность</span>
+                    <span>от 14 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Цветная полоса по борту широкая</span>
+                    <span>от 21 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Окраска корпуса ниже привального бруса</span>
+                    <span>от 29 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Окраска корпуса выше привального бруса</span>
+                    <span>от 29 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Полная окраска корпуса</span>
+                    <span>от 52 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Необрастающее покрытие днища</span>
+                    <span>41 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Защита киля</span>
+                    <span>22 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Тарга для буксировки водного лыжника</span>
+                    <span>35 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Тауэр для буксировки вэйкборда</span>
+                    <span>от 100 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Высокий носовой релинг</span>
+                    <span>35 000 руб.</span>
+                </div>
+            </div>
+            <div class="item-block-4__main_table item-block-4__table-1">
+
+                <div class="item-block-4__table-1_row">
+                    <span>Прочие</span>
+                    <span>от 14 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Цветная полоса по борту широкая</span>
+                    <span>от 21 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Окраска корпуса ниже привального бруса</span>
+                    <span>от 29 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Тауэр для буксировки вэйкборда</span>
+                    <span>от 100 000 руб.</span>
+                </div>
+                <div class="item-block-4__table-1_row">
+                    <span>Высокий носовой релинг</span>
+                    <span>35 000 руб.</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="item-block-6">
+    <div class="item-block-6__container container">
+        <div class="item-block-6__main">
+            <div class="item-block-6__main_left">
+                <div class="block-left_title">
+                    Предварительная заявка
+                </div>
+                <div class="block-left_text">
+                    Оставьте заявку и наши специалисты свяжутся с вами в ближайшее время.
+                </div>
+                <div class="block-left__form">
+                    <label for="name">
+                        <input id="block_6_name" type="text" placeholder="Ваше имя">
+                    </label>
+                    <label for="phone">
+                        <input id="block_6_phone" type="tel" placeholder="Номер телефона">
+                    </label>
+                    <label for="email">
+                        <input id="email" type="email" placeholder="Ваш email">
+                    </label>
+                </div>
+                <div class="block-left_conf">
+                    Отправляя свои данные я соглашаюсь с <a href="#"> политикой конфиденциальности </a> сайта и даю свое согласие на обработку персональных даных
+                </div>
+                <button class="block-left_btn">
+                    Отправить
+                </button>
+            </div>
+            <div class="item-block-6__main_meddle">
+                <img src="./img/item/meddle.svg" alt="meddle">
+            </div>
+            <div class="item-block-6__main_right">
+                <div class="block-left_title">
+                    Рассчитать стоимость
+                </div>
+                <div class="block-left_text">
+                    Зайдите в конфигуратор, чтобы добавить дополнительные опции вашего катера.
+                </div>
+                <div class="item-block-6__main_right-body">
+                    <div class="item-block-6__main_right-photo">
+                        <img src="img/item/proho_group.png" />
+                    </div>
+                    <div class="item-block-6__main_colors">
+                        <div class="item-block-6__color-item-1"></div>
+                        <div class="item-block-6__color-item-2"></div>
+                        <div class="item-block-6__color-item-3"></div>
+                        <div class="item-block-6__color-item-4"></div>
+                        <div class="item-block-6__color-item-5"></div>
+                        <div class="item-block-6__color-item-6"></div>
+                        <div class="item-block-6__color-item-7"></div>
+                        <div class="item-block-6__color-item-8"></div>
+                        <div class="item-block-6__color-item-9"></div>
+                        <div class="item-block-6__color-item-10"></div>
+                        <div class="item-block-6__color-item-11"></div>
+                    </div>
+                </div>
+                <a href="configuration.html" class="block-left_btn">
+                    Перейти в конфигуратор
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="top top-item">
+    <div class="item-top__title">
+        <span>Другие модели </span>
+    </div>
+    <div class="top__container top-item__container container">
+        <div class="top__main">
+            <a href="#" class="item__main_item">
+                <span>Slider 175</span>
+                <img src="./img/configuration/slider_175.png" alt="slider">
+            </a>
+            <a href="#" class="item__main_item  active">
+                <span>Slider 180</span>
+                <img src="./img/configuration/slider_180.png" alt="slider">
+            </a>
+            <a href="#" class="item__main_item">
+                <span>Slider 210</span>
+                <img src="./img/configuration/slider_210.png" alt="slider">
+            </a>
+            <a href="#" class="item__main_item">
+                <span>Slider 210BR</span>
+                <img src="./img/configuration/slider_210BR.png" alt="slider">
+            </a>
+            <a href="#" class="item__main_item">
+                <span>Slider 230</span>
+                <img src="./img/configuration/slider_230.png" alt="slider">
+            </a>
+            <a href="#" class="item__main_item">
+                <span>Slider 42</span>
+                <img src="./img/configuration/slider_42.png" alt="slider">
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="block-10">
+    <div class="container block-10__container">
+        <div class="block-10__title"></div>
+        <div class="block-10__main">
+            <div class="block-10__main_row-1">
+                <a href="contacts.html" class="block-10__main_contact">Контакты</a>
+                <div class="block-10__main_contact-body">
+                    <a href="tel:+7 925 649-43-03" class="block-10__main_tell">+7 925 649-43-03</a>
+                    <a href="mailto:aquasprint@mail.ru" class="block-10__main_email">aquasprint@mail.ru</a>
+                    <div class="block-10__main_social">
+                        <a href="https://www.instagram.com/?hl=ru" target="_blank">
+                            <img src="./img/images/block-10_inst.svg" alt="inst">
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=lz0upUv-WIQ&t=3s" target="_blank">
+                            <img src="./img/images/block-10_yout.svg" alt="yout">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="block-10__main_row-2">
+                <a href="caters.html" class="block-10__main_items">Катера</a>
+                <div class="block-10__main_items-body">
+                    <a href="item.html" class="block-10__main_item">Slider 175</a>
+                    <a href="item.html" class="block-10__main_item">Slider 180</a>
+                    <a href="item.html" class="block-10__main_item">Slider 210</a>
+                    <a href="item.html" class="block-10__main_item">Slider 210 BR</a>
+                    <a href="item.html" class="block-10__main_item">Slider 230</a>
+                    <a href="item.html" class="block-10__main_item">Slider 42</a>
+                </div>
+            </div>
+            <div class="block-10__main_row-3">
+                <a href="promotions.html" class="block-10__main_link">Акции</a>
+                <a href="production.html" class="block-10__main_link">Продукция</a>
+                <a href="tests.html" class="block-10__main_link">Тесты</a>
+                <a href="configuration.html" class="block-10__main_link">Конфигуратор</a>
+                <a href="ask.html" class="block-10__main_link">Вопросы и ответы</a>
+                <a href="offer.html" class="block-10__main_link">Отзывы</a>
+                <a href="info.html" class="block-10__main_link">О компании</a>
+                <a href="blog.html" class="block-10__main_link">Блог</a>
+                <a href="dillers.html" class="block-10__main_link">Дилеры</a>
+            </div>
+        </div>
+        <div class="block-10__bottom">
+            <div class="block-10__bottom_text">
+                Вся представленная информация, касающаяся комплектаций, технических характеристик, цветов, а так же
+                изображения, носит информационный характер и не является публичной офертой
+                (ст.437 (2) Гк РФ). Для получения подробной информации, пожалуйста, обращайтесь к официальным дилерам
+                торговой марки Slider, указанным на официальном сайте www.slider-boat.ru
+            </div>
+            <div class="block-10__bottom_info">
+                <div class="block-10__bottom_copy">
+                    © 2003 — 2020 г. Проектирование и производство катеров и яхт — SLIDER
+                </div>
+                <a href="conf.html" class="block-10__bottom_confidentially">
+                    Политика конфиденциальности
+                </a>
+                <div class="block-10__bottom_design">
+                    <a href="#">Разработка сайта </a>
+                    «Тайм Дизайн»
+                    <img src="./img/index/design_logotype.svg" alt="design_logotype">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+<script src="js/swiper_slider.js"></script>
+</body>
+</html>
