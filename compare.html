@@ -11,7 +11,7 @@
     <meta name="google" content="notranslate">
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/compare/compare.css">
+    <link rel="stylesheet" href="css/dest/app.min.css">
 </head>
 <body>
 
@@ -144,9 +144,12 @@
         </div>
         <div class="compare_text">
             Вы пока не знаете, на какой модели катера SLIDER Boat остановиться? Хотите определиться с выбором
-            самостоятельно? «Мы разработали для вас удобную таблицу сравнения моделей катеров. Выбирайте лучшее!»
+            самостоятельно? Мы разработали для вас удобную таблицу сравнения моделей катеров. Выбирайте лучшее!
         </div>
         <div class="compare__main">
+            <div class="compare_second_scroll">
+                <div class="scroll_div"></div>
+            </div>
             <div class="compare__table">
                 <div class="compare__table_col-1 col-1">
                     <div class="col-1__header">
@@ -470,6 +473,18 @@
         </div>
     </div>
 </div>
+<script>
+    const top_scroll = document.querySelector('.compare_second_scroll');
+    const bottom_scroll = document.querySelector('.compare__table');
+
+    bottom_scroll.addEventListener('scroll', () => {
+        top_scroll.scrollLeft = bottom_scroll.scrollLeft;
+    });
+
+    top_scroll.addEventListener('scroll', () => {
+        bottom_scroll.scrollLeft = top_scroll.scrollLeft
+    })
+</script>
 <script src="js/script.js"></script>
 </body>
 </html>

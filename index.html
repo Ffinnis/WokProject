@@ -11,7 +11,7 @@
     <meta name="google" content="notranslate">
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/index/index.css">
+    <link rel="stylesheet" href="css/dest/app.min.css">
     <link rel="stylesheet" href="css/swiper_slideer.css">
 </head>
 <body>
@@ -1040,13 +1040,13 @@
      div = document.createElement("div");
      div.setAttribute("data-id", v[n].dataset.id);
      div.classList.add('data-id');
-     div.innerHTML = labnolThumb(v[n].dataset.id);
+     div.innerHTML = labnolThumb1(v[n].dataset.id);
      div.onclick = labnolIframe1;
      v[n].appendChild(div);
         }
     });
     
-    function labnolThumb(id) {
+    function labnolThumb1(id) {
     var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
         play = '<div class="play"></div>';
     return thumb.replace("ID", id) + play;
@@ -1070,13 +1070,13 @@
      div = document.createElement("div");
      div.setAttribute("data-id", v[n].dataset.id);
      div.classList.add('data-id');
-     div.innerHTML = labnolThumb(v[n].dataset.id);
+     div.innerHTML = labnolThumb2(v[n].dataset.id);
      div.onclick = labnolIframe2;
      v[n].appendChild(div);
         }
     });
     
-    function labnolThumb(id) {
+    function labnolThumb2(id) {
     var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
         play = '<div class="play"></div>';
     return thumb.replace("ID", id) + play;
@@ -1100,13 +1100,13 @@
      div = document.createElement("div");
      div.setAttribute("data-id", v[n].dataset.id);
      div.classList.add('data-id');
-     div.innerHTML = labnolThumb(v[n].dataset.id);
+     div.innerHTML = labnolThumb3(v[n].dataset.id);
      div.onclick = labnolIframe3;
      v[n].appendChild(div);
         }
     });
     
-    function labnolThumb(id) {
+    function labnolThumb3(id) {
     var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
         play = '<div class="play"></div>';
     return thumb.replace("ID", id) + play;
@@ -1130,13 +1130,13 @@
      div = document.createElement("div");
      div.setAttribute("data-id", v[n].dataset.id);
      div.classList.add('data-map');
-     div.innerHTML = labnolThumb(v[n].dataset.id);
+     div.innerHTML = labnolThumb4(v[n].dataset.id);
      div.onclick = labnolIframe4;
      v[n].appendChild(div);
         }
     });
     
-    function labnolThumb(id) {
+    function labnolThumb4(id) {
     var thumb = '<img src="img/index/map.png">',
         play = '<div class="play"></div>';
     return thumb.replace("ID", id) + play;

@@ -11,7 +11,7 @@
     <meta name="google" content="notranslate">
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/contacts/contacts.css">
+    <link rel="stylesheet" href="css/dest/app.min.css">
 </head>
 <body>
 
@@ -172,7 +172,7 @@
                     </div>
                 </div>
                 <a href="dillers.html" class="block-left__btn">
-                    Все диллеры
+                    Все дилеры
                 </a>
                 <div class="block-left__social">
                     <div class="block-left__social_title">Социальные сети:</div>
@@ -212,15 +212,13 @@
 </div>
 
 <div class="map">
-    <div class="map__container container">
+    <div class="map__container container">  
         <div class="map__main">
             <div class="map__main_title">
                 Адрес на карте
             </div>
+            <div class="block_8__map" data-id="MAP_ID"></div>
         </div>
-    </div>
-    <div class="map__bg">
-
     </div>
 </div>
 
@@ -290,6 +288,36 @@
         </div>
     </div>
 </div>
+<script>
+    document.addEventListener("DOMContentLoaded",
+    function() {
+        var div, n,
+     v = document.getElementsByClassName("block_8__map");
+        for (n = 0; n < v.length; n++) {
+     div = document.createElement("div");
+     div.setAttribute("data-id", v[n].dataset.id);
+     div.classList.add('data-map');
+     div.innerHTML = labnolThumb4(v[n].dataset.id);
+     div.onclick = labnolIframe4;
+     v[n].appendChild(div);
+        }
+    });
+    
+    function labnolThumb4(id) {
+    var thumb = '<img src="img/index/map.png">',
+        play = '<div class="play"></div>';
+    return thumb.replace("ID", id) + play;
+    }
+    
+    function labnolIframe4() {
+    var iframe = document.createElement("iframe");
+    const embed = "https://yandex.ru/map-widget/v1/?um=constructor%3Ae7066f6c4ad8d5cb4c60b48562ef1529a7ed8007fb6caa94d378da0d9474b5f9&amp;source=constructor";
+    iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("height", "430");
+    this.parentNode.replaceChild(iframe, this);
+    } 
+</script>
 <script src="js/script.js"></script>
 </body>
 </html>
