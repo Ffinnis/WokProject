@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SLIDER</title>
+    <meta name="author" content="Aleksander Salnikov">
+    <meta name="robots" content="none">
+    <meta name="google" content="notranslate">
+    <link rel="import" href="https://ffinnis.github.io/WokProject/js/configuration_block.html">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/dest/app.min.css">
+</head>
+<body>
+
+<div class="popup">
+    <div class="popup__main">
+        <div class="popup__main_close">
+            <img src="./img/images/popup_close.svg" alt="popup_close">
+        </div>
+        <div class="popup__main_title">
+            у вас есть вопросы?
+        </div>
+        <div class="popup__main_text">
+            Оставьте телефон и наши специалисты свяжутся с вами в ближайшее время.
+        </div>
+        <div class="popup__main__form">
+            <label for="name">
+                <input id="name" type="text" placeholder="Ваше имя">
+            </label>
+            <label for="phone">
+                <input id="phone" type="tel" placeholder="Номер телефона">
+            </label>
+        </div>
+        <div class="popup__main_conf">
+            Отправляя свои данные я соглашаюсь с <a href="conf.html"> политикой конфиденциальности </a> сайта и даю свое
+            согласие на обработку персональных даных
+        </div>
+        <button class="popup__main_btn">
+            Отправить
+        </button>
+    </div>
+</div>
+<div class="zoom">
+    <div class="zoom__main">
+        <div class="zoom__main_close">
+            <img src="./img/images/popup_close.svg" alt="zoom_close">
+        </div>
+        <div class="zoom__img">
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="container header__container">
+        <a href="index.html" class="header__logo">
+            <img src="img/images/logo.png" alt="logo" loading="lazy"/>
+        </a>
+        <div class="header__main">
+            <div class="header__back-phone popup_open">
+                <img src="./img/images/btn_phone.svg" alt="btn_phone">
+                ЗАКАЗАТЬ ЗВОНОК
+            </div>
+            <div class="header__links">
+                <a href="caters.html" class="header__link">Катера</a>
+                <a href="compare.html" class="header__link compare_header">Сравнить <span>0</span></a>
+                <a href="dillers.html" class="header__link">Дилеры</a>
+                <a href="contacts.html" class="header__link">Контакты</a>
+            </div>
+        </div>
+        <div class="header__btn-menu">
+            <img src="img/images/menu.png" alt="menu"/>
+            <span>Меню</span>
+        </div>
+    </div>
+</div>
+<div class="menu">
+    <div class="menu__container container">
+        <div class="menu__row-1">
+            <div class="menu__row-1_item">
+                <a href="caters.html">Катера</a>
+            </div>
+            <a href="item.html" class="menu__row-1_item">
+                <span>Slider 175</span>
+                <img loading="lazy" src="./img/index/sliders/slider_175.png" alt="menu_item">
+            </a>
+            <a href="item.html" class="menu__row-1_item">
+                <span>Slider 180</span>
+                <img loading="lazy" src="./img/index/sliders/slider_180.png" alt="menu_item">
+            </a>
+            <a href="item.html" class="menu__row-1_item">
+                <span>Slider 210</span>
+                <img loading="lazy" src="./img/index/sliders/slider_210.png" alt="menu_item">
+            </a>
+            <a href="item.html" class="menu__row-1_item">
+                <span>Slider 210 BR</span>
+                <img loading="lazy" src="./img/index/sliders/slider_210BR.png" alt="menu_item">
+            </a>
+            <a href="item.html" class="menu__row-1_item">
+                <span>Slider 230</span>
+                <img loading="lazy" src="./img/index/sliders/slider_230.png" alt="menu_item">
+            </a>
+            <a href="item.html" class="menu__row-1_item">
+                <span>Slider 42</span>
+                <img loading="lazy" src="./img/index/sliders/slider_42.png" alt="menu_item">
+            </a>
+            <a href="compare.html" class="menu__row-1_item">
+                <span>Сравнить </span>
+            </a>
+        </div>
+        <div class="menu__row-2">
+            <a href="promotions.html" class="menu__row-2__link">Акции</a>
+            <a href="production.html" class="menu__row-2__link">Продукция</a>
+            <a href="tests.html" class="menu__row-2__link">Тесты</a>
+            <a href="configuration.html" class="menu__row-2__link">Конфигуратор</a>
+            <a href="ask.html" class="menu__row-2__link">Вопросы и ответы</a>
+            <a href="offer.html" class="menu__row-2__link">Отзывы</a>
+        </div>
+        <div class="menu__row-3">
+            <div class="menu__row-3_links">
+                <a href="info.html" class="menu__row-3__link">О компании</a>
+                <a href="blog.html" class="menu__row-3__link">Блог</a>
+                <a href="dillers.html" class="menu__row-3__link">Дилеры</a>
+                <a href="contacts.html" class="menu__row-3__link">Контакты</a>
+            </div>
+            <div class="menu__row-3_social">
+                <a href="https://www.instagram.com/?hl=ru" target="_blank">
+                    <img src="./img/images/block-10_inst.svg" alt="inst">
+                </a>
+                <a href="https://www.youtube.com/watch?v=lz0upUv-WIQ&t=3s" target="_blank">
+                    <img src="./img/images/block-10_yout.svg" alt="yout">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="top">
+    <div class="top__container container">
+        <div class="top__main">
+            <div class="top__main_item active">
+                <span>Slider 175</span>
+                <img loading="lazy" src="./img/configuration/slider_175.png" alt="slider">
+            </div>
+            <div class="top__main_item">
+                <span>Slider 180</span>
+                <img loading="lazy" src="./img/configuration/slider_180.png" alt="slider">
+            </div>
+            <div class="top__main_item">
+                <span>Slider 210</span>
+                <img loading="lazy" src="./img/configuration/slider_210.png" alt="slider">
+            </div>
+            <div class="top__main_item">
+                <span>Slider 210BR</span>
+                <img loading="lazy" src="./img/configuration/slider_210BR.png" alt="slider">
+            </div>
+            <div class="top__main_item">
+                <span>Slider 230</span>
+                <img loading="lazy" src="./img/configuration/slider_230.png" alt="slider">
+            </div>
+            <div class="top__main_item">
+                <span>Slider 42</span>
+                <img loading="lazy" src="./img/configuration/slider_42.png" alt="slider">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="window">
+    <div class="container">
+        <div class="blocks__title window__title">
+            <img src="./img/images/logo_line.svg" alt="logo_line">
+            <span class="window__active_title active"><i>Конфигуратор</i> «Slider 175»</span>
+            <span class="window__active_title"><i>Конфигуратор</i> «Slider 180»</span>
+            <span class="window__active_title"><i>Конфигуратор</i> «Slider 210»</span>
+            <span class="window__active_title"><i>Конфигуратор</i> «Slider 210BR»</span>
+            <span class="window__active_title"><i>Конфигуратор</i> «Slider 230»</span>
+            <span class="window__active_title"><i>Конфигуратор</i> «Slider 42»</span>
+            <img src="./img/images/logo_line.svg" alt="logo_line">
+        </div>
+    </div>
+    <div class="window__main">
+        <div class="window__container container">
+            <img loading="lazy" class="window__img active" src="./img/configuration/slider_big_180.svg" alt="window_slider">
+            <img loading="lazy" class="window__img" src="./img/configuration/slider_big_180.svg" alt="window_slider">
+            <img loading="lazy" class="window__img" src="./img/configuration/slider_big_180.svg" alt="window_slider">
+            <img loading="lazy" class="window__img" src="./img/configuration/slider_big_180.svg" alt="window_slider">
+            <img loading="lazy" class="window__img" src="./img/configuration/slider_big_180.svg" alt="window_slider">
+            <img loading="lazy" class="window__img" src="./img/configuration/slider_big_180.svg" alt="window_slider">
+        </div>
+    </div>
+</div>
+<div class="out">
+    <div class="out__container container">
+        <div class="out__btns">
+            <div class="out__btn out__btn_js active">ЭКСТЕРЬЕР</div>
+            <div class="out__btn out__btn_js">Электрооборудование</div>
+            <div class="out__btn out__btn_js">ИНТЕРЬЕР</div>
+            <div class="out__btn out__btn_js">КОМФОРТ И БЕЗОПАСНОСТЬ</div>
+            <div class="out__btn out__btn_js">Прочее</div>
+        </div>
+        <div class="out__block">
+            <div class="out__block_col-1" id="config_block">
+            </div>
+            <div class="out__block_col-2">
+                <div class="out__block_send">
+                    Оставить заявку
+                </div>
+                <div class="out__block_pdf">
+                    Скачать <span>конфигурацию</span> в PDF
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="out__fake"></div>
+<div class="config">
+    <div class="config__container">
+        <div class="config_link exterior active">
+            <div class="exterior__main">
+                <div class="exterior__base">
+                    <div class="exterior__base_title">
+                        <span>БАЗОВАЯ КОМПЛЕКТАЦИЯ</span>
+                    </div>
+                    <div class="exterior__base_row-1 exterior__base_row">
+                        <label for="base__check_row-1">
+                            <input id="base__check_row-1" type="checkbox" checked>
+                        </label>
+                        <span>Корпус и палуба цвет белый	Корпус и палуба цвет белый</span>
+                    </div>
+                    <div class="exterior__base_row-2 exterior__base_row">
+                        <label for="base__check_row-2">
+                            <input id="base__check_row-2" type="checkbox" checked>
+                        </label>
+                        <span>Безопасное лобовое стекло</span>
+                    </div>
+                    <div class="exterior__base_row-3 exterior__base_row">
+                        <label for="base__check_row-3">
+                            <input id="base__check_row-3" type="checkbox" checked>
+                        </label>
+                        <span>Расширенное остекление по правому и левому борту</span>
+                    </div>
+                    <div class="exterior__base_row-4 exterior__base_row">
+                        <label for="base__check_row-4">
+                            <input id="base__check_row-4" type="checkbox" checked>
+                        </label>
+                        <span>Открывающиеся иллюминаторы 7 шт.</span>
+                    </div>
+                    <div class="exterior__base_row-5 exterior__base_row">
+                        <label for="base__check_row-5">
+                            <input id="base__check_row-5" type="checkbox" checked>
+                        </label>
+                        <span>Платформа для купания</span>
+                    </div>
+                    <div class="exterior__base_row-6 exterior__base_row">
+                        <label for="base__check_row-6">
+                            <input id="base__check_row-6" type="checkbox" checked>
+                        </label>
+                        <span>Натуральное тиковое покрытие на платформу для купания</span>
+                    </div>
+                    <div class="exterior__base_row-7 exterior__base_row">
+                        <label for="base__check_row-7">
+                            <input id="base__check_row-7" type="checkbox" checked>
+                        </label>
+                        <span>Радарная арка</span>
+                    </div>
+                    <div class="exterior__base_row-8 exterior__base_row">
+                        <label for="base__check_row-8">
+                            <input id="base__check_row-8" type="checkbox" checked>
+                        </label>
+                        <span>Цвет корпусной мебели красное дерево	Цвет корпусной мебели красное дерево</span>
+                    </div>
+                    <div class="exterior__base_row-9 exterior__base_row">
+                        <label for="base__check_row-9">
+                            <input id="base__check_row-9" type="checkbox" checked>
+                        </label>
+                        <span>Цвет мягкой мебели в кокпите	Цвет мягкой мебели в кокпите</span>
+                    </div>
+                    <div class="exterior__base_row-10 exterior__base_row">
+                        <label for="base__check_row-10">
+                            <input id="base__check_row-10" type="checkbox" checked>
+                        </label>
+                        <span>Цвет мягкой мебели в каютах	Цвет мягкой мебели в каютах</span>
+                    </div>
+                </div>
+                <div class="exterior__line">
+                    <div class="exterior__line_title">
+                        <span>Окраска корпуса </span>
+                    </div>
+                    <div class="exterior__line_row-1 exterior__line_row">
+                        <label for="line__check_row-1">
+                            <input price="14000" id="line__check_row-1" name="line__check_row" type="checkbox" checked="checked">
+                        </label>
+                        <div class="line__text_row-1 line__text_row">
+                            <span>Цветная полоса по борту узкая:</span>
+                            <span>от 14 000 руб.</span>
+                        </div>
+                        <div class="line__img_row-1">
+                            <img src="./img/configuration/exterior__line_180_1.png" alt="exterior__line">
+                        </div>
+                    </div>
+                    <div class="exterior__line_row-2 exterior__line_row">
+                        <label for="line__check_row-2">
+                            <input price="21000" id="line__check_row-2" name="line__check_row" type="checkbox">
+                        </label>
+                        <div class="line__text_row-2 line__text_row">
+                            <span>Цветная полоса по борту широкая:</span>
+                            <span>от 21 000 руб.</span>
+                        </div>
+                        <div class="line__img_row-2">
+                            <img src="./img/configuration/exterior__line_180_2.png" alt="exterior__line">
+                        </div>
+                    </div>
+                    <div class="exterior__line_row-3 exterior__line_row">
+                        <label for="line__check_row-3">
+                            <input price="29000" id="line__check_row-3" name="line__check_row" type="checkbox">
+                        </label>
+                        <div class="line__text_row-3 line__text_row">
+                            <span>Окраска корпуса выше привального бруса:</span>
+                            <span>от 29 000 руб.</span>
+                        </div>
+                        <div class="line__img_row-3">
+                            <img src="./img/configuration/exterior__line_180_3.png" alt="exterior__line">
+                        </div>
+                    </div>
+                    <div class="exterior__line_row-4 exterior__line_row">
+                        <label for="line__check_row-4">
+                            <input price="29000" id="line__check_row-4" name="line__check_row" type="checkbox">
+                        </label>
+                        <div class="line__text_row-4 line__text_row">
+                            <span>Окраска корпуса ниже привального бруса:</span>
+                            <span>от 29 000 руб.</span>
+                        </div>
+                        <div class="line__img_row-4">
+                            <img src="./img/configuration/exterior__line_180_4.png" alt="exterior__line">
+                        </div>
+                    </div>
+                    <div class="exterior__line_row-5 exterior__line_row">
+                        <label for="line__check_row-5">
+                            <input price="52000" id="line__check_row-5" name="line__check_row" type="checkbox">
+                        </label>
+                        <div class="line__text_row-5 line__text_row">
+                            <span>Полная окраска корпуса:</span>
+                            <span>от 52 000 руб.</span>
+                        </div>
+                        <div class="line__img_row-5">
+                            <img src="./img/configuration/exterior__line_180_5.png" alt="exterior__line">
+                        </div>
+                    </div>
+                </div>
+                <div class="exterior__color">
+                    <div class="exterior__color_title">
+                        <span>ЦВЕТ корпуса</span>
+                    </div>
+                    <div class="exterior__color_row-1">
+                        <div class="exterior__color_col-1 exterior__color_col">
+                            <label for="exterior__color_radio-1">
+                                <input val="white" id="exterior__color_radio-1" name="exterior__color" type="radio"
+                                       >
+                            </label>
+                        </div>
+                        <div class="exterior__color_col-2 exterior__color_col">
+                            <label for="exterior__color_radio-2">
+                                <input val="yellow" id="exterior__color_radio-2" name="exterior__color" type="radio">
+                            </label>
+                        </div>
+                        <div class="exterior__color_col-3 exterior__color_col">
+                            <label for="exterior__color_radio-3">
+                                <input val="orange" id="exterior__color_radio-3" name="exterior__color" type="radio">
+                            </label>
+                        </div>
+                        <div class="exterior__color_col-4 exterior__color_col">
+                            <label for="exterior__color_radio-4">
+                                <input val="red" id="exterior__color_radio-4" name="exterior__color" type="radio">
+                            </label>
+                        </div>
+                        <div class="exterior__color_col-5 exterior__color_col">
+                            <label for="exterior__color_radio-5">
+                                <input val="purple" id="exterior__color_radio-5" name="exterior__color" type="radio">
+                            </label>
+                        </div>
+                        <div class="exterior__color_col-6 exterior__color_col">
+                            <label for="exterior__color_radio-6">
+                                <input val="darkblue" id="exterior__color_radio-6" name="exterior__color" type="radio" checked>
+                            </label>
+                        </div>
+                        <div class="exterior__color_col-7 exterior__color_col">
+                            <label for="exterior__color_radio-7">
+                                <input val="blue" id="exterior__color_radio-7" name="exterior__color" type="radio">
+                            </label>
+                        </div>
+                        <div class="exterior__color_col-8 exterior__color_col">
+                            <label for="exterior__color_radio-8">
+                                <input val="green" id="exterior__color_radio-8" name="exterior__color" type="radio">
+                            </label>
+                        </div>
+                        <div class="exterior__color_col-9 exterior__color_col">
+                            <label for="exterior__color_radio-9">
+                                <input val="gray" id="exterior__color_radio-9" name="exterior__color" type="radio">
+                            </label>
+                        </div>
+                        <div class="exterior__color_col-10 exterior__color_col">
+                            <label for="exterior__color_radio-10">
+                                <input val="chocolate" black id="exterior__color_radio-10" name="exterior__color"
+                                       type="radio">
+                            </label>
+                        </div>
+                        <div class="exterior__color_col-11 exterior__color_col">
+                            <label for="exterior__color_radio-11">
+                                <input val="black" id="exterior__color_radio-11" name="exterior__color" type="radio">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="exterior__color_row-2">
+                        <label for="exterior__color_row">
+                            <input val="other" id="exterior__color_row" name="exterior__color" type="radio">
+                        </label>
+                        <span>Другой цвет</span>
+                    </div>
+                </div>
+                <div class="exterior__more">
+                    <div class="exterior__more_title">
+                        <span>ДОПОЛНИТЕЛЬНЫЕ ОПЦИИ</span>
+                    </div>
+                    <div class="exterior__more_row-1 exterior__more_row">
+                        <label for="exterior__more_row-1">
+                            <input id="exterior__more_row-1" type="checkbox">
+                        </label>
+                        <span>Необрастающее покрытие днища</span>
+                    </div>
+                    <div class="exterior__more_row-2 exterior__more_row">
+                        <label for="exterior__more_row-2">
+                            <input id="exterior__more_row-2" type="checkbox">
+                        </label>
+                        <span>Защита киля</span>
+                    </div>
+                    <div class="exterior__more_row-3 exterior__more_row">
+                        <label for="exterior__more_row-3">
+                            <input id="exterior__more_row-3" type="checkbox">
+                        </label>
+                        <span>Тарга для буксировки водного лыжника</span>
+                    </div>
+                    <div class="exterior__more_row-4 exterior__more_row">
+                        <label for="exterior__more_row-4">
+                            <input id="exterior__more_row-4" type="checkbox">
+                        </label>
+                        <span>Тауэр для буксировки вэйкборда</span>
+                    </div>
+                    <div class="exterior__more_row-5 exterior__more_row">
+                        <label for="exterior__more_row-5">
+                            <input id="exterior__more_row-5" type="checkbox">
+                        </label>
+                        <span>Высокий носовой релинг</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="config_link electrics">
+            <div class="electrics__main">
+                <div class="electrics__base">
+                    <div class="electrics__base_title">
+                        <span>ДОПОЛНИТЕЛЬНЫЕ ОПЦИИ</span>
+                    </div>
+                    <div class="electrics__base_row-1 electrics__base_row">
+                        <label for="electrics__check_row-1">
+                            <input price="6500" id="electrics__check_row-1" type="checkbox">
+                        </label>
+                        <span class="electrics__base_text">Горн электрический</span>
+                        <span class="electrics__base_price">от 6 500 руб.</span>
+                        <div class="electrics__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                    <div class="electrics__base_row-2 electrics__base_row">
+                        <label for="electrics__check_row-2">
+                            <input price="8000" id="electrics__check_row-2" type="checkbox">
+                        </label>
+                        <span class="electrics__base_text">Светодиодная подсветка кокпита</span>
+                        <span class="electrics__base_price">8 000 руб.</span>
+                        <div class="electrics__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                    <div class="electrics__base_row-3 electrics__base_row">
+                        <label for="electrics__check_row-3">
+                            <input price="6000" id="electrics__check_row-3" type="checkbox">
+                        </label>
+                        <span class="electrics__base_text">Светодиодная подсветка кормовых потопчин</span>
+                        <span class="electrics__base_price">6 000 руб.</span>
+                        <div class="electrics__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                    <div class="electrics__base_row-4 electrics__base_row">
+                        <label for="electrics__check_row-4">
+                            <input price="30000" id="electrics__check_row-4" type="checkbox">
+                        </label>
+                        <span class="electrics__base_text">Подводная подсветка транца</span>
+                        <span class="electrics__base_price">от 30 000 руб.</span>
+                        <div class="electrics__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                    <div class="electrics__base_row-5 electrics__base_row">
+                        <label for="electrics__check_row-5">
+                            <input price="2500" id="electrics__check_row-5" type="checkbox">
+                        </label>
+                        <span class="electrics__base_text">Розетка 12В в консоли пассажира</span>
+                        <span class="electrics__base_price">2 500 руб.</span>
+                        <div class="electrics__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                    <div class="electrics__base_row-6 electrics__base_row">
+                        <label for="electrics__check_row-6">
+                            <input price="2500" id="electrics__check_row-6" type="checkbox">
+                        </label>
+                        <span class="electrics__base_text">Розетка 12В в каюте</span>
+                        <span class="electrics__base_price">2 500 руб.</span>
+                        <div class="electrics__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                    <div class="electrics__base_row-7 electrics__base_row">
+                        <label for="electrics__check_row-7">
+                            <input price="9500" id="electrics__check_row-7" type="checkbox">
+                        </label>
+                        <span class="electrics__base_text">Магнитола</span>
+                        <span class="electrics__base_price">от 9 500 руб.</span>
+                        <div class="electrics__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                    <div class="electrics__base_row-8 electrics__base_row">
+                        <label for="electrics__check_row-8">
+                            <input price="7500" id="electrics__check_row-8" type="checkbox">
+                        </label>
+                        <span class="electrics__base_text">Дополнительные аудиоколонки в кокпите (2шт.)</span>
+                        <span class="electrics__base_price">7 500 руб.</span>
+                        <div class="electrics__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                    <div class="electrics__base_row-9 electrics__base_row">
+                        <label for="electrics__check_row-9">
+                            <input price="60000" id="electrics__check_row-9" type="checkbox">
+                        </label>
+                        <span class="electrics__base_text">Аккустическая система: магнитола, морские динамики 4 шт., усилитель</span>
+                        <span class="electrics__base_price">от 60 000 руб.</span>
+                        <div class="electrics__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                    <div class="electrics__base_row-10 electrics__base_row">
+                        <label for="electrics__check_row-10">
+                            <input price="8500" id="electrics__check_row-10" type="checkbox">
+                        </label>
+                        <span class="electrics__base_text">Трюмная помпа с автоматическим включением</span>
+                        <span class="electrics__base_price">8 500 руб.</span>
+                        <div class="electrics__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                    <div class="electrics__base_row-11 electrics__base_row">
+                        <label for="electrics__check_row-11">
+                            <input price="19000" id="electrics__check_row-11" type="checkbox">
+                        </label>
+                        <span class="electrics__base_text">Двухаккумуляторная система с автоматическим реле</span>
+                        <span class="electrics__base_price">19 000 руб.</span>
+                        <div class="electrics__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="config_link interior">
+            <div class="interior__main">
+                <div class="interior__base">
+                    <div class="interior__base_title">
+                        <span>ИНТЕРЬЕР ОПЦИИ</span>
+                    </div>
+                    <div class="interior__base_row-1 interior__base_row">
+                        <label for="interior__check_row-1">
+                            <input price="6500" id="interior__check_row-1" type="checkbox">
+                        </label>
+                        <span class="interior__base_text">Интерьер</span>
+                        <span class="interior__base_price">от 6 500 руб.</span>
+                        <div class="interior__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                    <div class="interior__base_row-2 interior__base_row">
+                        <label for="interior__check_row-2">
+                            <input price="6500" id="interior__check_row-2" type="checkbox">
+                        </label>
+                        <span class="interior__base_text">Интерьер</span>
+                        <span class="interior__base_price">от 6 500 руб.</span>
+                        <div class="interior__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                    <div class="interior__base_row-3 interior__base_row">
+                        <label for="interior__check_row-3">
+                            <input price="6500" id="interior__check_row-3" type="checkbox">
+                        </label>
+                        <span class="interior__base_text">Интерьер</span>
+                        <span class="interior__base_price">от 6 500 руб.</span>
+                        <div class="interior__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                    <div class="interior__base_row-4 interior__base_row">
+                        <label for="interior__check_row-4">
+                            <input price="6500" id="interior__check_row-4" type="checkbox">
+                        </label>
+                        <span class="interior__base_text">Интерьер</span>
+                        <span class="interior__base_price">от 6 500 руб.</span>
+                        <div class="interior__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                    <div class="interior__base_row-5 interior__base_row">
+                        <label for="interior__check_row-5">
+                            <input price="6500" id="interior__check_row-5" type="checkbox">
+                        </label>
+                        <span class="interior__base_text">Интерьер</span>
+                        <span class="interior__base_price">от 6 500 руб.</span>
+                        <div class="interior__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                    <div class="interior__base_row-6 interior__base_row">
+                        <label for="interior__check_row-6">
+                            <input price="6500" id="interior__check_row-6" type="checkbox">
+                        </label>
+                        <span class="interior__base_text">Интерьер</span>
+                        <span class="interior__base_price">от 6 500 руб.</span>
+                        <div class="interior__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                    <div class="interior__base_row-7 interior__base_row">
+                        <label for="interior__check_row-7">
+                            <input price="6500" id="interior__check_row-7" type="checkbox">
+                        </label>
+                        <span class="interior__base_text">Интерьер</span>
+                        <span class="interior__base_price">от 6 500 руб.</span>
+                        <div class="interior__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="config_link safe">
+            <div class="safe__main">
+                <div class="safe__base">
+                    <div class="safe__base_title">
+                        <span>ДОПОЛНИТЕЛЬНЫЕ ОПЦИИ</span>
+                    </div>
+                    <div class="safe__base_row-1 safe__base_row">
+                        <label for="safe__check_row-1">
+                            <input price="6500" id="safe__check_row-1" type="checkbox">
+                        </label>
+                        <span class="safe__base_text">Комфорт и безопасность</span>
+                        <span class="safe__base_price">от 6 500 руб.</span>
+                        <div class="safe__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                    <div class="safe__base_row-2 safe__base_row">
+                        <label for="safe__check_row-2">
+                            <input price="6500" id="safe__check_row-2" type="checkbox">
+                        </label>
+                        <span class="safe__base_text">Комфорт и безопасность</span>
+                        <span class="safe__base_price">от 6 500 руб.</span>
+                        <div class="safe__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                    <div class="safe__base_row-3 safe__base_row">
+                        <label for="safe__check_row-3">
+                            <input price="6500" id="safe__check_row-3" type="checkbox">
+                        </label>
+                        <span class="safe__base_text">Комфорт и безопасность</span>
+                        <span class="safe__base_price">от 6 500 руб.</span>
+                        <div class="safe__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                    <div class="safe__base_row-4 safe__base_row">
+                        <label for="safe__check_row-4">
+                            <input price="6500" id="safe__check_row-4" type="checkbox">
+                        </label>
+                        <span class="safe__base_text">Комфорт и безопасность</span>
+                        <span class="safe__base_price">от 6 500 руб.</span>
+                        <div class="safe__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                    <div class="safe__base_row-5 safe__base_row">
+                        <label for="safe__check_row-5">
+                            <input price="6500" id="safe__check_row-5" type="checkbox">
+                        </label>
+                        <span class="safe__base_text">Комфорт и безопасность</span>
+                        <span class="safe__base_price">от 6 500 руб.</span>
+                        <div class="safe__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                    <div class="safe__base_row-6 safe__base_row">
+                        <label for="safe__check_row-6">
+                            <input price="6500" id="safe__check_row-6" type="checkbox">
+                        </label>
+                        <span class="safe__base_text">Комфорт и безопасность</span>
+                        <span class="safe__base_price">от 6 500 руб.</span>
+                        <div class="safe__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                    <div class="safe__base_row-7 safe__base_row">
+                        <label for="safe__check_row-7">
+                            <input price="6500" id="safe__check_row-7" type="checkbox">
+                        </label>
+                        <span class="safe__base_text">Комфорт и безопасность</span>
+                        <span class="safe__base_price">от 6 500 руб.</span>
+                        <div class="safe__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="config_link other">
+            <div class="other__main">
+                <div class="other__base">
+                    <div class="other__base_title">
+                        <span>ПРОЧИЕ ОПЦИИ</span>
+                    </div>
+                    <div class="other__base_row-1 other__base_row">
+                        <label for="other__check_row-1">
+                            <input price="6500" id="other__check_row-1" type="checkbox">
+                        </label>
+                        <span class="other__base_text">Прочие</span>
+                        <span class="other__base_price">от 6 500 руб.</span>
+                        <div class="other__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                    <div class="other__base_row-2 other__base_row">
+                        <label for="other__check_row-2">
+                            <input price="6500" id="other__check_row-2" type="checkbox">
+                        </label>
+                        <span class="other__base_text">Прочие</span>
+                        <span class="other__base_price">от 6 500 руб.</span>
+                        <div class="other__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                    <div class="other__base_row-3 other__base_row">
+                        <label for="other__check_row-3">
+                            <input price="6500" id="other__check_row-3" type="checkbox">
+                        </label>
+                        <span class="other__base_text">Прочие</span>
+                        <span class="other__base_price">от 6 500 руб.</span>
+                        <div class="other__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                    <div class="other__base_row-4 other__base_row">
+                        <label for="other__check_row-4">
+                            <input price="6500" id="other__check_row-4" type="checkbox">
+                        </label>
+                        <span class="other__base_text">Прочие</span>
+                        <span class="other__base_price">от 6 500 руб.</span>
+                        <div class="other__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                    <div class="other__base_row-5 other__base_row">
+                        <label for="other__check_row-5">
+                            <input price="6500" id="other__check_row-5" type="checkbox">
+                        </label>
+                        <span class="other__base_text">Прочие</span>
+                        <span class="other__base_price">от 6 500 руб.</span>
+                        <div class="other__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                    <div class="other__base_row-6 other__base_row">
+                        <label for="other__check_row-6">
+                            <input price="6500" id="other__check_row-6" type="checkbox">
+                        </label>
+                        <span class="other__base_text">Прочие</span>
+                        <span class="other__base_price">от 6 500 руб.</span>
+                        <div class="other__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                    <div class="other__base_row-7 other__base_row">
+                        <label for="other__check_row-7">
+                            <input price="6500" id="other__check_row-7" type="checkbox">
+                        </label>
+                        <span class="other__base_text">Прочие</span>
+                        <span class="other__base_price">от 6 500 руб.</span>
+                        <div class="other__base_img">
+                            <img src="./img/configuration/electrics__base_img.png" alt="electrics">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="block-10">
+    <div class="container block-10__container">
+        <div class="block-10__title"></div>
+        <div class="block-10__main">
+            <div class="block-10__main_row-1">
+                <a href="contacts.html" class="block-10__main_contact">Контакты</a>
+                <div class="block-10__main_contact-body">
+                    <a href="tel:+7 925 649-43-03" class="block-10__main_tell">+7 925 649-43-03</a>
+                    <a href="mailto:aquasprint@mail.ru" class="block-10__main_email">aquasprint@mail.ru</a>
+                    <div class="block-10__main_social">
+                        <a href="https://www.instagram.com/?hl=ru" target="_blank">
+                            <img src="./img/images/block-10_inst.svg" alt="inst">
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=lz0upUv-WIQ&t=3s" target="_blank">
+                            <img src="./img/images/block-10_yout.svg" alt="yout">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="block-10__main_row-2">
+                <a href="caters.html" class="block-10__main_items">Катера</a>
+                <div class="block-10__main_items-body">
+                    <a href="item.html" class="block-10__main_item">Slider 175</a>
+                    <a href="item.html" class="block-10__main_item">Slider 180</a>
+                    <a href="item.html" class="block-10__main_item">Slider 210</a>
+                    <a href="item.html" class="block-10__main_item">Slider 210 BR</a>
+                    <a href="item.html" class="block-10__main_item">Slider 230</a>
+                    <a href="item.html" class="block-10__main_item">Slider 42</a>
+                </div>
+            </div>
+            <div class="block-10__main_row-3">
+                <a href="promotions.html" class="block-10__main_link">Акции</a>
+                <a href="production.html" class="block-10__main_link">Продукция</a>
+                <a href="tests.html" class="block-10__main_link">Тесты</a>
+                <a href="configuration.html" class="block-10__main_link">Конфигуратор</a>
+                <a href="ask.html" class="block-10__main_link">Вопросы и ответы</a>
+                <a href="offer.html" class="block-10__main_link">Отзывы</a>
+                <a href="info.html" class="block-10__main_link">О компании</a>
+                <a href="blog.html" class="block-10__main_link">Блог</a>
+                <a href="dillers.html" class="block-10__main_link">Дилеры</a>
+            </div>
+        </div>
+        <div class="block-10__bottom">
+            <div class="block-10__bottom_text">
+                Вся представленная информация, касающаяся комплектаций, технических характеристик, цветов, а так же
+                изображения, носит информационный характер и не является публичной офертой
+                (ст.437 (2) Гк РФ). Для получения подробной информации, пожалуйста, обращайтесь к официальным дилерам
+                торговой марки Slider, указанным на официальном сайте www.slider-boat.ru
+            </div>
+            <div class="block-10__bottom_info">
+                <div class="block-10__bottom_copy">
+                    © 2003 — 2020 г. Проектирование и производство катеров и яхт — SLIDER
+                </div>
+                <a href="conf.html" class="block-10__bottom_confidentially">
+                    Политика конфиденциальности
+                </a>
+                <div class="block-10__bottom_design">
+                    <a href="#">Разработка сайта </a>
+                    «Тайм Дизайн»
+                    <img src="./img/index/design_logotype.svg" alt="design_logotype">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+ var file = document.querySelector('link[rel="import"]').import;
+ var block_1 = file.querySelector('.out__block_info');
+ var block_2= file.querySelector('.out__block_sum');
+ var clone_block1 = document.importNode(block_1, true)
+ var clone_block2 = document.importNode(block_2, true)
+ document.querySelector('#config_block').appendChild(clone_block1)
+ document.querySelector('#config_block').appendChild(clone_block2)
+</script>
+<script src="./js/configurator.js"></script>
+</body>
+</html>
