@@ -9,10 +9,10 @@
     <meta name="author" content="Aleksander Salnikov">
     <meta name="robots" content="none">
     <meta name="google" content="notranslate">
-    <link rel="import" href="https://ffinnis.github.io/WokProject/js/configuration_block.html">
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/dest/app.min.css">
+    <link rel="import" href="https://ffinnis.github.io/WokProject/js/configuration_block.html">
 </head>
 <body>
 
@@ -882,9 +882,8 @@
     </div>
 </div>
 <script>
- var file = document.querySelector('link[rel="import"]').import;
- var block_1 = file.querySelector('.out__block_info');
- var block_2= file.querySelector('.out__block_sum');
+ var block_1 = document.querySelector('link[rel="import"]').import.querySelector('.out__block_info');
+ var block_2= document.querySelector('link[rel="import"]').import.querySelector('.out__block_sum');
  var clone_block1 = document.importNode(block_1, true)
  var clone_block2 = document.importNode(block_2, true)
  document.querySelector('#config_block').appendChild(clone_block1)
