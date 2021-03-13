@@ -11,6 +11,7 @@
     <meta name="google" content="notranslate">
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="preload" as="style" href="css/dest/header.min.css" onload="this.onload=null;this.rel=`stylesheet`">
     <link rel="stylesheet" href="css/dest/app.min.css">
 </head>
 <body>
@@ -174,7 +175,7 @@
 </div>
 <div class="block-8">
     <div class="block-8__container container">
-        <div class="block_8__map" data-id="MAP_ID"></div>
+        <div class="block_8__map lazy" data-id="MAP_ID"></div>
         <div class="block-8__main">
             <div class="block-8__left-block">
                 <div class="block-8__row1">«Центральный офис продаж»</div>
@@ -284,7 +285,7 @@
     });
     
     function labnolThumb4(id) {
-    var thumb = '<img src="img/index/map.webp">',
+    var thumb = '<img src="undefined">',
         play = '<div class="play"></div>';
     return thumb.replace("ID", id) + play;
     }

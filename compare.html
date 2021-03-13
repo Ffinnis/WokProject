@@ -477,14 +477,19 @@
 <script>
     const top_scroll = document.querySelector('.compare_second_scroll');
     const bottom_scroll = document.querySelector('.compare__table');
-
-    bottom_scroll.addEventListener('scroll', () => {
+    const top_scroll_wrap = document.querySelector('.scroll_div')
+    top_scroll.style.width = 100 + "%";
+    top_scroll_wrap.style.width = 350 + (180*6) + "px";
+    if (window.innerWidth < 640){
+        bottom_scroll.addEventListener('scroll', () => {
         top_scroll.scrollLeft = bottom_scroll.scrollLeft;
+        top_scroll.scrollWidth = bottom_scroll.scrollWidth
     });
 
     top_scroll.addEventListener('scroll', () => {
         bottom_scroll.scrollLeft = top_scroll.scrollLeft
     })
+    }
 </script>
 <script src="js/script.js"></script>
 </body>
