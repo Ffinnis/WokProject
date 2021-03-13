@@ -223,11 +223,11 @@ let fullSum = () => {
 //-------- check color & line ------------
 const color_el = document.querySelectorAll('[name="exterior__color"]');
 const line_checker = document.querySelectorAll('[name="line__check_row"]');
-active_color = color_el[5].getAttribute('val');
+active_color = color_el[5].getAttribute('data-val');
 const check_color = (e) => {
   for (let i = 0; i < color_el.length; i++) {
     if (color_el[i].checked) {
-      active_color = color_el[i].getAttribute('val');
+      active_color = color_el[i].getAttribute('data-val');
     }
   }
   for (let i = 0; i < line_checker.length; i++) {
@@ -238,8 +238,6 @@ const check_color = (e) => {
       active_color_line = '0';
     }
   }
-  // console.log(active_color_line)
-  // console.log(active_color)
 
   // for (let i = 0; i < all_activ_image.length; i++) {
   //     all_activ_image[i].classList.remove('active');
@@ -364,9 +362,8 @@ document.querySelectorAll('img.svg').forEach(function (element) {
       }
 
       if (imgClass != null) {
-        // svg.setAttribute('class', imgClass + ' replaced-svg');
+        svg.setAttribute('class', imgClass + ' replaced-svg');
       }
-
       svg.removeAttribute('xmlns:a');
 
       if (!svg.hasAttribute('viewBox') && svg.hasAttribute('height') && svg.hasAttribute('width')) {
@@ -389,12 +386,14 @@ const out_img_210 = document.querySelectorAll('.out_img_210');
 const out_img_210BR = document.querySelectorAll('.out_img_210BR');
 const out_img_230 = document.querySelectorAll('.out_img_230');
 const out_img_42 = document.querySelectorAll('.out_img_42');
+
 const change_out_img = () => {
   switch (active_slider) {
     case 'Slider 175': {
       for (let i = 0; i < out_img_175.length; i++) {
         if (out_img_175[i].getAttribute('line') == active_color_line) {
           out_img_175[i].classList.add('active');
+
           if (out_img_175[i].querySelector('.cls-33')) {
             if (active_color_line == 0) {
               out_img_175[i].querySelector('.cls-33').style.fill = '#d6d6d6';

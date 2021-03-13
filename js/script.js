@@ -289,3 +289,18 @@ if (sl_42) {
     sl_42.classList.remove('active');
   }
 }
+
+/* animation */
+for (btn_comp of btn_comparison) {
+  btn_comp.addEventListener('click', (e) => {
+    var image = e.target.parentNode.parentNode.children[1].querySelector('img');
+    var span_img = e.target.parentNode.parentNode.children[1].querySelector('span');
+    var s_image = image.cloneNode(false);
+    span_img.appendChild(s_image);
+    span_img.classList.add('active');
+    setTimeout(() => {
+      span_img.removeChild(s_image);
+      span_img.classList.remove('active');
+    }, 500);
+  });
+}
