@@ -11,12 +11,12 @@ for (let i = 0; i < popup_open.length; i++) {
 }
 popup__main_close.addEventListener('click', () => {
   popup.classList.remove('active');
-  document.body.style.overflow = 'auto';
+  document.body.style.overflowY = 'auto';
 });
 popup.addEventListener('click', function (e) {
   if (popup === e.target) {
     popup.classList.remove('active');
-    document.body.style.overflow = 'auto';
+    document.body.style.overflowY = 'auto';
   }
 });
 
