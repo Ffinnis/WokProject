@@ -161,7 +161,7 @@ for (let i = 0; i < top__main_item.length; i++) {
 }
 
 let active_slider = 'Slider 175';
-let active_color = 'white';
+let active_color = 'blue';
 let oprion_sum = 0;
 let active_color_line = '0';
 
@@ -386,6 +386,7 @@ const out_img_210 = document.querySelectorAll('.out_img_210');
 const out_img_210BR = document.querySelectorAll('.out_img_210BR');
 const out_img_230 = document.querySelectorAll('.out_img_230');
 const out_img_42 = document.querySelectorAll('.out_img_42');
+const out__block_item = document.querySelectorAll('.out__block_item');
 
 const change_out_img = () => {
   switch (active_slider) {
@@ -393,6 +394,7 @@ const change_out_img = () => {
       for (let i = 0; i < out_img_175.length; i++) {
         if (out_img_175[i].getAttribute('line') == active_color_line) {
           out_img_175[i].classList.add('active');
+          out__block_item[i].classList.add('active');
 
           if (out_img_175[i].querySelector('.cls-33')) {
             if (active_color_line == 0) {
@@ -405,6 +407,7 @@ const change_out_img = () => {
           }
         } else {
           out_img_175[i].classList.remove('active');
+          out__block_item[i].classList.remove('active');
         }
       }
       break;
