@@ -104,6 +104,8 @@ const zoomer = document.querySelectorAll('.zoomer');
 const zoom = document.querySelector('.zoom');
 const zoom__main_close = document.querySelector('.zoom__main_close');
 const zoom__img = document.querySelector('.zoom__img');
+const zoom__main_next = document.querySelector('.zoom__main_next')
+const zoom__main_prev = document.querySelector('.zoom__main_prev')
 if (zoomer.length > 0) {
   for (let i = 0; i < zoomer.length; i++) {
     zoomer[i].classList.add('swiper-slide-active');
@@ -119,6 +121,20 @@ if (zoomer.length > 0) {
       menu.classList.remove('active');
     });
   }
+  zoom__main_next.addEventListener('click', () => {
+    let next_img = document.querySelector('.block-5__main .swiper-slide-active .swiper-slide-next');
+    zoom__img.lastElementChild.remove();
+    zoom__img.append(next_img.lastElementChild.cloneNode(true));
+    const arrow_right = document.querySelector('.block-5__arrow-right');
+    arrow_right.click()
+  })
+  zoom__main_prev.addEventListener('click', () => {
+    let prev_img = document.querySelector('.block-5__main .swiper-slide-active .swiper-slide-prev');
+    zoom__img.lastElementChild.remove();
+    zoom__img.append(prev_img.lastElementChild.cloneNode(true));
+    const arrow_left = document.querySelector('.block-5__arrow-left');
+    arrow_left.click()
+  })
   zoom__main_close.addEventListener('click', () => {
     zoom.classList.remove('active');
     document.body.style.overflow = 'auto';
@@ -129,7 +145,7 @@ if (zoomer.length > 0) {
   zoom.addEventListener('click', function (e) {
     if (zoom === e.target) {
       zoom.classList.remove('active');
-      document.body.style.overflow = 'auto';
+      document.body.style.overflowY = 'auto';
       if (zoom__img.lastElementChild) {
         zoom__img.lastElementChild.remove();
       }

@@ -11,12 +11,12 @@ for (let i = 0; i < popup_open.length; i++) {
 }
 popup__main_close.addEventListener('click', () => {
   popup.classList.remove('active');
-  document.body.style.overflow = 'auto';
+  document.body.style.overflowY = 'auto';
 });
 popup.addEventListener('click', function (e) {
   if (popup === e.target) {
     popup.classList.remove('active');
-    document.body.style.overflow = 'auto';
+    document.body.style.overflowY = 'auto';
   }
 });
 
@@ -161,7 +161,7 @@ for (let i = 0; i < top__main_item.length; i++) {
 }
 
 let active_slider = 'Slider 175';
-let active_color = 'white';
+let active_color = 'blue';
 let oprion_sum = 0;
 let active_color_line = '0';
 
@@ -273,12 +273,12 @@ const check_color = (e) => {
 //-------- функция сумма опций ------------
 const option_price = document.querySelector('.option_price');
 // const line__check_row = document.querySelectorAll('[name=line__check_row]');
-const priceArg = document.querySelectorAll('[price]');
+const priceArg = document.querySelectorAll('[data-price]');
 const optionSum = () => {
   oprion_sum = 0;
   for (let i = 0; i < priceArg.length; i++) {
     if (priceArg[i].checked) {
-      oprion_sum += +priceArg[i].getAttribute('price');
+      oprion_sum += +priceArg[i].getAttribute('data-price');
     }
   }
   if (oprion_sum > 0) {
@@ -386,13 +386,20 @@ const out_img_210 = document.querySelectorAll('.out_img_210');
 const out_img_210BR = document.querySelectorAll('.out_img_210BR');
 const out_img_230 = document.querySelectorAll('.out_img_230');
 const out_img_42 = document.querySelectorAll('.out_img_42');
+const out__block_item_175 = document.querySelectorAll('.out__block_item_175');
+const out__block_item_180 = document.querySelectorAll('.out__block_item_180');
+const out__block_item_210 = document.querySelectorAll('.out__block_item_210');
+const out__block_item_210BR = document.querySelectorAll('.out__block_item_210BR');
+const out__block_item_230 = document.querySelectorAll('.out__block_item_230');
+const out__block_item_42 = document.querySelectorAll('.out__block_item_42');
 
 const change_out_img = () => {
   switch (active_slider) {
     case 'Slider 175': {
       for (let i = 0; i < out_img_175.length; i++) {
-        if (out_img_175[i].getAttribute('line') == active_color_line) {
+        if (out_img_175[i].getAttribute('data-line') == active_color_line) {
           out_img_175[i].classList.add('active');
+          out__block_item_175[i].classList.add('active');
 
           if (out_img_175[i].querySelector('.cls-33')) {
             if (active_color_line == 0) {
@@ -405,14 +412,16 @@ const change_out_img = () => {
           }
         } else {
           out_img_175[i].classList.remove('active');
+          out__block_item_175[i].classList.remove('active');
         }
       }
       break;
     }
     case 'Slider 180': {
       for (let i = 0; i < out_img_180.length; i++) {
-        if (out_img_180[i].getAttribute('line') == active_color_line) {
+        if (out_img_180[i].getAttribute('data-line') == active_color_line) {
           out_img_180[i].classList.add('active');
+          out__block_item_180[i].classList.add('active');
           if (out_img_180[i].querySelector('.cls-33')) {
             if (active_color_line == 0) {
               out_img_180[i].querySelector('.cls-33').style.fill = '#d6d6d6';
@@ -424,14 +433,16 @@ const change_out_img = () => {
           }
         } else {
           out_img_180[i].classList.remove('active');
+          out__block_item_180[i].classList.remove('active');
         }
       }
       break;
     }
     case 'Slider 210': {
       for (let i = 0; i < out_img_210.length; i++) {
-        if (out_img_210[i].getAttribute('line') == active_color_line) {
+        if (out_img_210[i].getAttribute('data-line') == active_color_line) {
           out_img_210[i].classList.add('active');
+          out__block_item_210[i].classList.add('active');
           if (out_img_210[i].querySelector('.cls-33')) {
             if (active_color_line == 0) {
               out_img_210[i].querySelector('.cls-33').style.fill = '#d6d6d6';
@@ -443,14 +454,16 @@ const change_out_img = () => {
           }
         } else {
           out_img_210[i].classList.remove('active');
+          out__block_item_210[i].classList.remove('active');
         }
       }
       break;
     }
     case 'Slider 210BR': {
       for (let i = 0; i < out_img_210BR.length; i++) {
-        if (out_img_210BR[i].getAttribute('line') == active_color_line) {
+        if (out_img_210BR[i].getAttribute('data-line') == active_color_line) {
           out_img_210BR[i].classList.add('active');
+          out__block_item_210BR[i].classList.add('active');
           if (out_img_210BR[i].querySelector('.cls-33')) {
             if (active_color_line == 0) {
               out_img_210BR[i].querySelector('.cls-33').style.fill = '#d6d6d6';
@@ -462,14 +475,16 @@ const change_out_img = () => {
           }
         } else {
           out_img_210BR[i].classList.remove('active');
+          out__block_item_210BR[i].classList.remove('active');
         }
       }
       break;
     }
     case 'Slider 230': {
       for (let i = 0; i < out_img_230.length; i++) {
-        if (out_img_230[i].getAttribute('line') == active_color_line) {
+        if (out_img_230[i].getAttribute('data-line') == active_color_line) {
           out_img_230[i].classList.add('active');
+          out__block_item_230[i].classList.add('active');
           if (out_img_230[i].querySelector('.cls-33')) {
             if (active_color_line == 0) {
               out_img_230[i].querySelector('.cls-33').style.fill = '#d6d6d6';
@@ -481,14 +496,16 @@ const change_out_img = () => {
           }
         } else {
           out_img_230[i].classList.remove('active');
+          out__block_item_230[i].classList.remove('active');
         }
       }
       break;
     }
     case 'Slider 42': {
       for (let i = 0; i < out_img_42.length; i++) {
-        if (out_img_42[i].getAttribute('line') == active_color_line) {
+        if (out_img_42[i].getAttribute('data-line') == active_color_line) {
           out_img_42[i].classList.add('active');
+          out__block_item_42[i].classList.add('active');
           if (out_img_42[i].querySelector('.cls-33')) {
             if (active_color_line == 0) {
               out_img_42[i].querySelector('.cls-33').style.fill = '#d6d6d6';
@@ -500,6 +517,7 @@ const change_out_img = () => {
           }
         } else {
           out_img_42[i].classList.remove('active');
+          out__block_item_42[i].classList.remove('active');
         }
       }
       break;
